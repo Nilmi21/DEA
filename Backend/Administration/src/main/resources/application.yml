@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:mariadb://localhost:3306/scmsdb
+    username: root
+    password: codename47SUNBRO@239485672
+    driver-class-name: org.mariadb.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+  sql:
+    init:
+      mode: always
+
+scms:
+  cors:
+    origin: "http://localhost:5173/"
+    customers: "http://localhost:8081"
+    suppliers: "http://localhost:8082"
+    products: "http://localhost:8083"
+    invoices: "http://localhost:8084"
+
+server:
+  port: 8080
